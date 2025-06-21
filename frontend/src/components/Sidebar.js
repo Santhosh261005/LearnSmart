@@ -23,7 +23,7 @@ const StudentSidebar = ({ activeSection, setActiveSection, onProfileClick }) => 
             <GraduationCap className="h-6 w-6 text-white" />
           </div>
           <div>
-            <h2 className="text-lg font-semibold text-gray-900">EduPath</h2>
+            <h2 className="text-lg font-semibold text-gray-900">LearnSmart</h2>
             <p className="text-sm text-gray-600">Student Portal</p>
           </div>
         </div>

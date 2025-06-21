@@ -24,7 +24,7 @@ const HomePage = () => {
                 <GraduationCap className="h-8 w-8 text-white" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-gray-900">EduPath</h1>
+                <h1 className="text-2xl font-bold text-gray-900">LearnSmart</h1>
                 <p className="text-sm text-gray-600">Student Teaching & Monitoring Platform</p>
               </div>
             </div>
@@ -37,7 +37,7 @@ const HomePage = () => {
         {/* Hero Section */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Welcome to <span className="text-blue-600">EduPath</span>
+            Welcome to <span className="text-blue-600">LearnSmart</span>
           </h2>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
             Empowering education through technology. Track progress, manage courses, and enhance learning experiences.
@@ -146,7 +146,7 @@ const HomePage = () => {
       <footer className="bg-white border-t mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center text-gray-600">
-            <p>&copy; 2024 EduPath. Empowering education through technology.</p>
+            <p>&copy; 2025 LearnSmart. Empowering education through technology.</p>
           </div>
         </div>
       </footer>
