@@ -1,4 +1,4 @@
-
+const cors = require('cors');
 const connectDB = require('./config/connect');
 require('dotenv').config();
 const authStuRoutes = require('./routes/authStuRoutes');
@@ -13,6 +13,14 @@ const errorHandlerMiddleware = require('./middleware/error-handler');
 // middleware
 
 app.use(express.json());
+
+app.use(cors());
+
+// Or restrict like this:
+app.use(cors({
+  origin: 'http://localhost:3000',  // your frontend
+  credentials: true                 // if using cookies or auth headers
+}));
 
 // Define routes here..before the error handlers
 app.use('/auth/student', authStuRoutes);
