@@ -4,6 +4,8 @@ require('dotenv').config();
 const authStuRoutes = require('./routes/authStuRoutes');
 const authInsRoutes = require('./routes/authInsRoutes');
 
+const studentRoutes = require('./routes/studentRoutes');
+
 const express = require('express');
 const app = express();
 
@@ -26,6 +28,7 @@ app.use(cors({
 app.use('/auth/student', authStuRoutes);
 app.use('/auth/instructor', authInsRoutes);
 
+app.use('/student',studentRoutes)
 
 app.use(notFoundMiddleware);
 app.use(errorHandlerMiddleware);

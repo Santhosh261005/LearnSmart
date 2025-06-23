@@ -6,7 +6,8 @@ import CourseCard from '../components/CourseCard';
 import ProgressCard from '../components/ProgressCard';
 import UserProfile from '../components/UserProfile';
 
-const StudentDashboard = () => {
+
+  const StudentDashboard = () => {
   const [activeSection, setActiveSection] = useState('courses');
   const [showProfile, setShowProfile] = useState(false);
 

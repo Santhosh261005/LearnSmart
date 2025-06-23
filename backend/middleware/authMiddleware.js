@@ -1,5 +1,6 @@
 const jwt = require('jsonwebtoken')
 const { UnauthenticatedError } = require('../errors')
+require('dotenv').config()
 
 const authenticationMiddleware = async (req, res, next) => {
   const authHeader = req.headers.authorization
@@ -12,7 +13,9 @@ const authenticationMiddleware = async (req, res, next) => {
 
   try {
     const decoded = jwt.verify(token, process.env.JWT_SECRET)
-    const { id, username } = decoded
+    const  id = decoded._id
+    const username =   decoded.name
+    
     req.user = { id, username }
     next()
   } catch (error) {
